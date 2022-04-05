@@ -1,0 +1,131 @@
+body{
+    background: #f1c5d7;
+    text-align: center;
+    padding-top: 50px ;
+}
+
+h1{
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+button{
+    border: 2px solid #ffffff;
+    background: #fe9297;
+    padding: 14px 20px;
+    margin: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#fila{
+display: flex;
+justify-content: space-evenly;
+align-items:center;
+}
+
+#contBotones{
+    width: 450px;
+    height: 450px;
+    background: #fe9297;
+}
+
+#contFiguras{
+    width: 450px;
+    height: 450px;
+    background: #0fa053c2;
+    background-size: cover 50px;
+    color: #ffffff;
+}
+
+#figura{
+    width: 180px;
+    height: 180px;
+    background: #ffffff;
+    margin: 0 auto; 
+    /* Auto cuando se centra */
+    margin-top: 60px;
+    transition: .5s;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    background: #b5fcf0;
+}
+
+#figura.rombo{
+    width:180px;
+    height: 180px;
+    transform: rotate(-45deg);
+    background: #b5fcf0;
+    transition: .5s;
+}
+
+#figura.rectangulohorizontal{
+    width: 180px;
+    height: 90px;
+    background: #b5fcf0;
+}
+
+#figura.rectangulovertical{
+    width: 180px;
+    height: 240px;
+    background: #b5fcf0;
+}
+
+#figura.imagen{
+    width: 220px;
+    height: 190px;
+    background: url(1.jpg);
+    border: 3px solid #ffffff;
+}
+
+#figura.subir{
+    transform: translateY(-60px);
+}
+
+#figura.bajar{
+    transform: translateY(80px);
+}
+
+#figura.izquierda{
+    transform: translateX(-60px);
+}
+
+#figura.derecha{
+    transform: translateX(60px);
+}
+
+#figura.diagonal{
+    transform: translateX(-120px) translateY(120px);
+}
+
+#chat{
+    background: #fe9297;
+    width: 300px;
+    height: 350px;
+    position: fixed;
+    right: -300px;
+    top: 20%;
+    transition: 1s;
+    color: #ffffff;
+}
+#chat.active{
+    right: 0;
+}
+
+#btnChat{
+    position: fixed;
+    right: -30px;
+    top: 26%;
+    background: #ffffff;
+    border: 2px solid#0fa053c2;
+    transform: rotate(-90deg);
+    height: 25px;
+    color: #0fa053c2;
+    
+}
+#btnChat.active{
+    right: 268px;
+}
